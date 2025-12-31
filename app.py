@@ -150,3 +150,4 @@ if st.button("召喚 Seulgi & Wendy"):
                     st.error(f"AI 連線錯誤: {e}")
         else:
             st.warning("⚠️ 請記得在 Streamlit 設定 Secrets 輸入 OPENAI_API_KEY")
+
