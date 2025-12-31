@@ -5,8 +5,7 @@ from datetime import datetime
 from openai import OpenAI
 import os
 
-# --- 1. 頁面設定 (這行必須是第一個 Streamlit 指令) ---
-# 修正：layout 只能是 "centered" 或 "wide"
+# --- 1. 頁面設定 (這裡絕對是 centered) ---
 st.set_page_config(page_title="94 Line Fit", page_icon="🐻💙", layout="centered")
 
 # --- 2. 94 Line 專屬配色 CSS ---
@@ -150,4 +149,3 @@ if st.button("召喚 Seulgi & Wendy"):
                     st.error(f"AI 連線錯誤: {e}")
         else:
             st.warning("⚠️ 請記得在 Streamlit 設定 Secrets 輸入 OPENAI_API_KEY")
-
